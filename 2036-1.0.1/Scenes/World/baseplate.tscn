@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d14rftc0ymcjh"]
+
+[ext_resource type="PackedScene" uid="uid://dkh7e8c4uemk5" path="res://Scenes/Player/player.tscn" id="1_wtvkd"]
+[ext_resource type="PackedScene" uid="uid://fgunvcxlh6cb" path="res://Scenes/Interactables/static_body_2d.tscn" id="2_x56bt"]
+[ext_resource type="PackedScene" uid="uid://dhnwoq7d67v7b" path="res://Scenes/Interactables/door.tscn" id="3_vdleb"]
+[ext_resource type="PackedScene" uid="uid://bgt8eije8fim8" path="res://Scenes/Interactables/stairs.tscn" id="4_j1jfx"]
+[ext_resource type="PackedScene" uid="uid://pjhwgo0wdkbw" path="res://Scenes/Interactables/oxygen_zone.tscn" id="5_7vhl6"]
+[ext_resource type="PackedScene" uid="uid://dqqklrf74d4dx" path="res://Scenes/UI/oxygen_ui.tscn" id="6_liey1"]
+[ext_resource type="PackedScene" uid="uid://ndogq35r4b68" path="res://Scenes/Interactables/oxygen_station.tscn" id="7_8dfjw"]
+
+[sub_resource type="GDScript" id="GDScript_60j2f"]
+
+[node name="Baseplate" type="Node2D" unique_id=1889961144]
+
+[node name="Player" parent="." unique_id=1728047539 instance=ExtResource("1_wtvkd")]
+
+[node name="StaticBody2D" parent="." unique_id=799102369 instance=ExtResource("2_x56bt")]
+position = Vector2(48, 48)
+disable_mode = 1
+collision_mask = 3
+script = SubResource("GDScript_60j2f")
+
+[node name="Door" parent="." unique_id=866528182 instance=ExtResource("3_vdleb")]
+
+[node name="Stairs" parent="." unique_id=481914611 instance=ExtResource("4_j1jfx")]
+position = Vector2(48, -16)
+
+[node name="OxygenZone" parent="." unique_id=905952852 instance=ExtResource("5_7vhl6")]
+position = Vector2(80, 16)
+
+[node name="OxygenUI" parent="." unique_id=520806519 instance=ExtResource("6_liey1")]
+
+[node name="OxygenStation" parent="." unique_id=1479425094 instance=ExtResource("7_8dfjw")]
+position = Vector2(-48, 32)

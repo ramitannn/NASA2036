@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dhnwoq7d67v7b"]
+
+[ext_resource type="Script" uid="uid://bgp67p4nihv05" path="res://Scripts/door.gd" id="1_w6aom"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81kwv"]
+size = Vector2(16, 16)
+
+[node name="Door" type="Area2D" unique_id=866528182]
+script = ExtResource("1_w6aom")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1091642067]
+position = Vector2(-40, -8)
+shape = SubResource("RectangleShape2D_81kwv")
+debug_color = Color(0.83763725, 0.38655856, 0, 0.41960785)
+
+[node name="EntrancePoint" type="Marker2D" parent="." unique_id=1720747213]
+position = Vector2(-48.025, -16)

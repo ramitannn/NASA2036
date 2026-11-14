@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dqqklrf74d4dx"]
+
+[ext_resource type="Script" uid="uid://3r8ywifiry5w" path="res://Scripts/UI/oxygen_panel.gd" id="1_5oaki"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=520806519]
+layer = 10
+
+[node name="OxygenPanel" type="PanelContainer" parent="." unique_id=1346848673]
+custom_minimum_size = Vector2(200, 65)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_5oaki")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OxygenPanel" unique_id=1900899513]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="OxygenPanel/VBoxContainer" unique_id=983032026]
+layout_mode = 2
+text = "OXYGEN LEVEL"
+vertical_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="OxygenPanel/VBoxContainer" unique_id=1717275373]
+layout_mode = 2

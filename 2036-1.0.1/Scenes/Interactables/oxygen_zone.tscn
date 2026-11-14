@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://pjhwgo0wdkbw"]
+
+[ext_resource type="Script" uid="uid://dd2gnovxd4t4s" path="res://Scripts/oxygen_zone.gd" id="1_mevk1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81kwv"]
+size = Vector2(80, 80)
+
+[node name="OxygenZone" type="Area2D" unique_id=905952852]
+script = ExtResource("1_mevk1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282603409]
+position = Vector2(40, 40)
+shape = SubResource("RectangleShape2D_81kwv")

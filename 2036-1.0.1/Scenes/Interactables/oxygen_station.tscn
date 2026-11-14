@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ndogq35r4b68"]
+
+[ext_resource type="Script" uid="uid://c0lwufufa0imd" path="res://Scripts/oxygen_station.gd" id="1_jv737"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_81kwv"]
+size = Vector2(16, 16)
+
+[node name="OxygenStation" type="Area2D" unique_id=1479425094]
+script = ExtResource("1_jv737")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=19265669]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_81kwv")
+debug_color = Color(0.22195646, 0.627822, 0.35011777, 0.41960785)

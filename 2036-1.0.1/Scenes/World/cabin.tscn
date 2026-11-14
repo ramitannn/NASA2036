@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c0bkur7iljoth"]
+
+[ext_resource type="Texture2D" uid="uid://dxal0ulkku8c7" path="res://Assets/conceptmap.png" id="1_ms4um"]
+
+[node name="Cabin" type="Node2D" unique_id=494204700]
+
+[node name="Conceptmap" type="Sprite2D" parent="." unique_id=1819769342]
+z_index = -1
+position = Vector2(240, 160)
+scale = Vector2(1.875, 1.25)
+texture = ExtResource("1_ms4um")
+hframes = 6
+vframes = 4

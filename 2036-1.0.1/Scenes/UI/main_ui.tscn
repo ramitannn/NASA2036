@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bqktprc7us051"]
+
+[node name="MainUI" type="CanvasLayer" unique_id=116506774]
+
+[node name="UIContainer" type="Control" parent="." unique_id=2012195562]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 64.0
+
+[node name="HUD" type="Control" parent="UIContainer" unique_id=1578753693]
+anchors_preset = 0
+offset_right = 80.0
+offset_bottom = 64.0

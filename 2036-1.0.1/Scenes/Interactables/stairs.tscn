@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bgt8eije8fim8"]
+
+[ext_resource type="Script" uid="uid://ixpugfvw7x6b" path="res://Scripts/stairs.gd" id="1_aiuvb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_thl7a"]
+size = Vector2(16, 96)
+
+[node name="Stairs" type="Area2D" unique_id=481914611]
+script = ExtResource("1_aiuvb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1928531414]
+position = Vector2(8, -32)
+shape = SubResource("RectangleShape2D_thl7a")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=319423730]
+
+[node name="TopPoint" type="Marker2D" parent="." unique_id=915709616]
+position = Vector2(0, -96)
+
+[node name="BottomPoint" type="Marker2D" parent="." unique_id=1906322357]
